@@ -17,7 +17,7 @@ Alternatively, [Siamtu](https://t.me/rsrmusic)! (Keep all support questions in t
 
 ## You can also tap the Deploy To Heroku button below to deploy straight to Heroku!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RSR-Downloader/mizokani)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RSR-Downloader/mami-clone)
 
 ## Starting the bot.
 
