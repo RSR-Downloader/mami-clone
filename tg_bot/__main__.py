@@ -18,7 +18,11 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi...ka hnathawh theih i hriat duh chuan\n /help tih hi click rawh.**
+Hi...kei hi group i enkawlna a pui thei tu tur che Bot ka ni e,
+
+Ka hnathawh theih i hriat duh chuan /help tih hi click rawh.
+
+I awmna group ah min add la,admin ah min dah la ka nung nghal ang.
 
 """
 
@@ -132,8 +136,11 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN)
+                PM_START_TEXT.format(escape_markdown(bot.first_name)),
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+                    [[InlineKeyboardButton(text="➕ Add Me to Your Group ➕", url="t.me/{}?startgroup=true".format(bot.username))]]))
     else:
         update.effective_message.reply_text("Hnathawk tur in ka inpeih e👮‍♀️")
 
