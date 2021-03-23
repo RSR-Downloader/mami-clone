@@ -216,14 +216,14 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- - /adminlist: Group chhung a Admin list check na.
+ - /adminlist:  list of admins in the chat.
 
 *Admin only:*
- - /pin: Hemi hmang hian chat i pin thei ang,i pin duh kha hemi hmang hian reply mai tur ani e.
- - /unpin: I chat pin kha i unpin duh chuan heihi hman leh mai tur.
- - /invitelink: Invite link lak chhuah na.
- - /promote: An chat reply na ah hemi i thawn chuan i promote thei ang.
- - /demote: An chat ah bawk i reply leh chuan i demote ang.
+ - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
+ - /unpin: unpins the currently pinned message.
+ - /invitelink: gets invitelink.
+ - /promote: promotes the user replied to.
+ - /demote: demotes the user replied to.
 """
 
 __mod_name__ = "Admin"
